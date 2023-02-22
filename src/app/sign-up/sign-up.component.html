@@ -1,18 +1,22 @@
 <div class="formContainer" >
+    <img class="image" src="assets/signup.svg">
     <div class="formWrapper">
         <img class="logo" src="assets/logo.svg">
         <span class="tittle">Register</span>
         <form class="ap">
-            <input type="text" placeholder="Full Name"/>
-            <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Password"/>
+            <label for="name-field">Please enter your Name</label>
+            <input type="text" id="name-field" placeholder="Full Name"/>
+            <label for="email-field">Please enter Email</label>
+            <input type="email" id="email-field" placeholder="hello@xyz.com"/>
+            <label for="password-field">Please enter Password</label>
+            <input type="password" id="password-field" placeholder="**********"/>
+            <label for="categorie">Categorie</label>
             <select name="categorie">
                 <option value="#">Individual / Social worker</option>
                 <option value="#">Restaurants / Marriage Garden</option>
                 <option value="#">NGOs</option>
                 <option value="#">Others</option>
             </select>
-            <button>Sign Up</button>
         </form>
         
         <p>Have an account? Login</p>

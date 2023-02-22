@@ -1,42 +1,59 @@
 .formContainer{
-    background-color: rgb(239, 238, 238);
+    background-color: #fdd2b7;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
+}
+.tittle{
+    font-size:3ch;
+    font-weight: 800;
 }
 .formWrapper{
-    background-color: white;
-    padding: 10px 60px;
-    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffb88c;
+    height: 85vh;
+    width: 400px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
 .ap{
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 80%;
 }
 input{
     padding: 15px;
     border: none;
-    border-bottom: 1px solid  rgb(173, 173, 173);
+    border-radius: 5px;
 }
 select{
     padding: 15px;
     border: none;
-    border-bottom: 1px solid  rgb(173, 173, 173);
+    border-radius: 5px;
 }
 .logo{
     height: 120px;
 }
 button{
-    background-color: #7b96ec ;
+    background-color: #ed6926 ;
     border: none;
     color: white;
-    padding: 10px;
+    padding: 15px;
     font-weight: 700;
-    border-radius: 20px;
+    border-radius: 10px;
+    width: 60%;
+    
+}
+.image{
+    height: 700px;
+    width: 950px;
+    padding: 20px;
 }
