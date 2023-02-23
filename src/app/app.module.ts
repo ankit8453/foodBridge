@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { HeaderComponent } from './header/header.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { OurMissionComponent } from './our-mission/our-mission.component';
+import { JoinUsComponent } from './join-us/join-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignUpComponent,
-    HomepageComponent
+    HomepageComponent,
+    HeaderComponent,
+    AboutUsComponent,
+    OurMissionComponent,
+    JoinUsComponent
   ],
   imports: [
     BrowserModule,
