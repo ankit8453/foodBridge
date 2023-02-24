@@ -5,7 +5,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { OurMissionComponent } from './our-mission/our-mission.component';
 import { JoinUsComponent } from './join-us/join-us.component';
 const routes: Routes = [
-  {path:'', redirectTo:'/homepage', pathMatch:'full' },
+  {path:'', component:HomepageComponent, },
   {path:'homepage', component:HomepageComponent,},
   {path:'about-us', pathMatch:'full', component:AboutUsComponent, },
   {path:'our-mission', pathMatch:'full', component:OurMissionComponent, },
