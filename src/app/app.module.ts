@@ -16,6 +16,9 @@ import { UserProfileComponent } from './user-dashboard/user-profile/user-profile
 import { HelpSupportComponent } from './user-dashboard/help-support/help-support.component';
 import { LogOutComponent } from './user-dashboard/log-out/log-out.component';
 import { SettingComponentComponent } from './user-dashboard/setting-component/setting-component.component';
+import { Homesection1Component } from './homepage/homesection1/homesection1.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,11 +30,8 @@ import { SettingComponentComponent } from './user-dashboard/setting-component/se
     OurMissionComponent,
     JoinUsComponent,
     ForgetPassComponent,
+    Homesection1Component,
     UserDashboardComponent,
-    UserProfileComponent,
-    HelpSupportComponent,
-    LogOutComponent,
-    SettingComponentComponent
   ],
   imports: [
     BrowserModule,
