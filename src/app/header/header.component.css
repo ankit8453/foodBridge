@@ -10,7 +10,7 @@
     display:flex;
     justify-content: space-between;
     background-color: #F4F2F0;
-    width: 100%;
+    width: 100vw;
     height: 54px;
 }
 .nav img{
