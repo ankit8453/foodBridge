@@ -1,19 +1,20 @@
 .formContainer{
-    background-color: #fdd2b7;
-    height: 100vh;
+    background-image: linear-gradient(to bottom, #f3c0a1 , #ffe4cbf4);
+    height: 90vh;
     display: flex;
     align-items: center; 
+    justify-content: space-around;
 }
 .tittle{
     font-size:3ch;
     font-weight: 800;
 }
 .formWrapper{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px; */
+    padding-bottom: 12px;
     background-color: #ffb88c;
-    height: 63vh;
-    width: 400px;
+    height: fit-content;
+    width: 300px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -21,17 +22,25 @@
     align-items: center;
 }
 .ap{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px; */
+    font-size: 13px;
+    padding-bottom: 7px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 7px;
     width: 80%;
 }
+label{
+    margin-bottom: -4px;
+}
 input{
-    padding: 15px;
+    padding: 7px;
     border: none;
     border-radius: 5px;
+    margin-bottom: 6px;
+}
+input:focus{
+    outline: none;
 }
 select{
     padding: 15px;
@@ -39,20 +48,23 @@ select{
     border-radius: 5px;
 }
 .logo{
-    height: 120px;
+    padding-top: 20px;
+    height: 90px;
 }
 button{
-    background-color: #ed6926 ;
+    background-color: hsl(20, 85%, 54%) ;
     border: none;
     color: white;
-    padding: 15px;
+    padding: 6px;
     font-weight: 700;
     border-radius: 10px;
     width: 60%;
     
 }
 .image{
-    height: 700px;
-    width: 950px;
-    padding: 20px;
+    height: 100%;
+}
+p{
+    font-size: 13px;
+    margin: 8px;
 }
