@@ -1,0 +1,16 @@
+.container {
+    background-image: linear-gradient(to bottom, #f3c0a1 , #ffffff);
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-container{
+    display: flex;
+}
+#side-navbar{
+    width:250px;
+    height: 800px;
+    background-color: aliceblue;
+
+}
+#content{padding: 20px;}

@@ -15,8 +15,10 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { UserProfileComponent } from './user-dashboard/user-profile/user-profile.component';
 import { HelpSupportComponent } from './user-dashboard/help-support/help-support.component';
 import { LogOutComponent } from './user-dashboard/log-out/log-out.component';
-import { SettingComponentComponent } from './user-dashboard/setting-component/setting-component.component';
 import { Homesection1Component } from './homepage/homesection1/homesection1.component';
+import { LeftNavComponent } from './user-dashboard/left-nav/left-nav.component';
+import { SettingsComponent } from './user-dashboard/settings/settings.component';
+import { MainDashboardComponent } from './user-dashboard/main-dashboard/main-dashboard.component';
 
 
 @NgModule({
@@ -32,6 +34,12 @@ import { Homesection1Component } from './homepage/homesection1/homesection1.comp
     ForgetPassComponent,
     Homesection1Component,
     UserDashboardComponent,
+    LeftNavComponent,
+    UserProfileComponent,
+    LogOutComponent,
+    HelpSupportComponent,
+    SettingsComponent,
+    MainDashboardComponent,
   ],
   imports: [
     BrowserModule,
