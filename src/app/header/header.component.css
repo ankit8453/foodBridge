@@ -4,13 +4,11 @@
 }
 .navbar img{
     height: 15px;
-    width: 100%;
 }
 .nav{
     display:flex;
     justify-content: space-between;
     background-color: #F4F2F0;
-    width: 100vw;
     height: 54px;
 }
 .nav img{
@@ -23,12 +21,13 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 .nav li{
-    padding: 17px 26px 14px 20px;
-    /* margin: 11px 20px; */
+    margin-left: 17px;
+    margin-right: 17px;
 }
-.nav li a{
+a{
     text-decoration: none;
     color: #545454;
     /* font-size: 17px; */
@@ -50,12 +49,16 @@
 .nav-elements input:focus{
     outline: none;
 }
-.active{
-    
-    border-bottom: 4px solid #EB6019;
-    /* background-color: black; */
+.active a::after{
+  content:""; 
+  float:left;
+  width:100%; 
+  height:2.5px; 
+  border-radius: 10px;
+  background: #EB6019;
+  color: #EB6019; 
+   
 }
-.active:visited
-{
+a:hover{
     color: #EB6019;
 }
