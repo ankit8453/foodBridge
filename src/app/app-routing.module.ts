@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'about-us', pathMatch:'full', component:AboutUsComponent, },
   {path:'our-mission', pathMatch:'full', component:OurMissionComponent, },
   {path:'join-us', pathMatch:'full', component:JoinUsComponent, },
-  {path:'about-us', component:UserDashboardComponent, children:[
+  {path:'user-dashboard', component:UserDashboardComponent, children:[
     {path:'main-dashboard', component:MainDashboardComponent},
     {path:'user-profile', component:UserProfileComponent},
     {path:'help-support', component:HelpSupportComponent},
