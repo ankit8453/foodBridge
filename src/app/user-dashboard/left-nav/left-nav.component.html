@@ -1,19 +1,19 @@
 <nav class="left-nav">
     <ul class="nav-items">
         <li class="nav-item" routerLinkActive="active">
-            <a class="side-nav-links" >Dashboard </a>
+            <a class="side-nav-links" routerLink="main-dashboard">Dashboard </a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-             <a class="side-nav-links">Profile </a>
+             <a class="side-nav-links" routerLink="user-profile">Profile </a>
         </li>
         <li class="nav-item" routerLinkActive="active"> 
-            <a class="side-nav-links">Settings </a>
+            <a class="side-nav-links" routerLink="settings">Settings </a>
         </li>
         <li class="nav-item" routerLinkActive="active"> 
-            <a class="side-nav-links">Help & Support </a>
+            <a class="side-nav-links" routerLink="help-support">Help & Support </a>
         </li>
         <li class="nav-item" routerLinkActive="active"> 
-            <a class="side-nav-links">Logout </a>
+            <a class="side-nav-links" (click)="confirmBox()">Logout </a>
         </li>
         <span id="version">version 1.0.008</span>
     </ul>

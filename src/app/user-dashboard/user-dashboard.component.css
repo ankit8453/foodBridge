@@ -1,11 +1,8 @@
 .container {
     background-image: linear-gradient(to bottom, #f3c0a1 , #ffffff);
-    height: 500px;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-}
-.main-container{
-    display: flex;
+    /* justify-content: space-between; */
 }
 #side-navbar{
     width:250px;

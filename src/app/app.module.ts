@@ -14,11 +14,11 @@ import { ForgetPassComponent } from './forget-pass/forget-pass.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { UserProfileComponent } from './user-dashboard/user-profile/user-profile.component';
 import { HelpSupportComponent } from './user-dashboard/help-support/help-support.component';
-import { LogOutComponent } from './user-dashboard/log-out/log-out.component';
 import { Homesection1Component } from './homepage/homesection1/homesection1.component';
 import { LeftNavComponent } from './user-dashboard/left-nav/left-nav.component';
 import { SettingsComponent } from './user-dashboard/settings/settings.component';
 import { MainDashboardComponent } from './user-dashboard/main-dashboard/main-dashboard.component';
+// import { UserDashboardRoutingModule } from './user-dashboard/user-dashboard-routing.module';
 
 
 @NgModule({
@@ -36,14 +36,14 @@ import { MainDashboardComponent } from './user-dashboard/main-dashboard/main-das
     UserDashboardComponent,
     LeftNavComponent,
     UserProfileComponent,
-    LogOutComponent,
     HelpSupportComponent,
     SettingsComponent,
     MainDashboardComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // UserDashboardRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
