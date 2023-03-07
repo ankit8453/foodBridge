@@ -1,9 +1,9 @@
 .formContainer{
-    background-image: linear-gradient(to bottom, #f3c0a1 , #ffe4cbf4);
-    height: 90vh;
+    background-image: linear-gradient(to bottom, #f3c0a1 , #fdebdbf7);
+    height: 100vh;
     display: flex;
     align-items: center; 
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .tittle{
     font-size:3ch;
@@ -14,12 +14,13 @@
     padding-bottom: 12px;
     background-color: #ffb88c;
     height: fit-content;
-    width: 300px;
+    width: 280px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    margin-right: 140px;
 }
 .ap{
     /* padding-top: 20px; */
@@ -63,6 +64,7 @@ button{
 }
 .image{
     height: 100%;
+    margin-left: 30px;
 }
 p{
     font-size: 13px;
