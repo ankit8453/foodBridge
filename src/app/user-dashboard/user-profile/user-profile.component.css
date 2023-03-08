@@ -44,8 +44,13 @@
 
 .profile-main-data{margin-top: 0;padding-top: 4px; width: 30%;}
 
+.profile-action{display:flex ; padding-left: 20px }
 
-.user-name{margin-top: 0; padding-top: 12px; padding-left: 20px;}
+.profile-action a{flex-direction: column; margin: 0 auto;
+    padding: 2px 10px;
+
+}
+.user-name{margin-top: 0; padding-top: 0; padding-left: 30px;}
 
 .user-designation{margin: 0;padding-left: 30px; color: #6c757d;}
 
@@ -74,7 +79,7 @@
     }
     .edit-icon{
         position: relative;
-        bottom: 15px;
+        bottom: 430px;
         left: 850px;
         float: right;
         margin-top: 10px;
