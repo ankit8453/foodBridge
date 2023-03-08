@@ -89,7 +89,8 @@
         width: 25%;
     }
     div .text a{ 
-        color: #007bff;
+        color: #ffab2c;
+        /* font-weight: 400; */
         text-decoration: none;
         background-color: transparent;
     }
