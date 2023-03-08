@@ -8,6 +8,8 @@
     width:230px;
     height: 800px;
     background-color: aliceblue;
+    position: sticky;
+    left: 0;
 
 }
 #content{padding: 20px;}
