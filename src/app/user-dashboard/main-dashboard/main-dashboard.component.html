@@ -1,7 +1,29 @@
-<p>main-dashboard works!</p>
+<!-- <p>main-dashboard works!</p> -->
 <div class="right-container">
-    <blockquote>
-        Welcome $User-Name, $User-Email
-    </blockquote>
-    <img src="/angular.json" width="30px">
+    <nav id="user-info">
+        <ul class="nav-items">
+        <li class="nav-item">
+        <strong class="welcome-Msg sp-x">Welcome To Dashboard,</strong>
+        </li>
+        <li class="nav-item">
+        <span class="user-name">$User_Name</span>
+        </li>
+        <li class="nav-item user-img">
+        <img src="assets/User-Profile-PNG-File.png" width="50px"  alt="UserImage">
+        </li>
+       
+        <li class="nav-item drawer">
+            <button class="btn-down-drawer">
+            <img src="/assets/downarrow.png" width="20px"  alt="UserImage">
+            </button>
+        </li>
+       
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="contribute-btn">
+            <button class="btn-contribute">Contribute Now</button>
+        </div>
+    </div>
+   
 </div>

@@ -1,13 +1,15 @@
 .container {
-    background-image: linear-gradient(to bottom, #f3c0a1 , #ffffff);
+    background-image: linear-gradient(to bottom, #f3c0a1 , #fdebdbf7, white);
     height: 100vh;
     display: flex;
     /* justify-content: space-between; */
 }
 #side-navbar{
-    width:250px;
+    width:230px;
     height: 800px;
     background-color: aliceblue;
+    position: sticky;
+    left: 0;
 
 }
 #content{padding: 20px;}

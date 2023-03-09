@@ -1,6 +1,9 @@
 .navbar{
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
 }
 .navbar img{
     height: 15px;
@@ -34,15 +37,16 @@ a{
 }
 ul li img{
     height: 20px;
-    margin-left: -40px;
+    margin: 0px;
     width: 20px;
     cursor: pointer;
 }
 #inputngo{
-    width: 180px;
-    padding: 7px 0px 10px 10px;
+    width: 163px;
+    padding: 7px 0px 10px 20px;
     font-size: 12px;
     color: #7B7B7B;
+    margin-right: 0px;
 }
 .nav-elements input{
     border: none;
@@ -67,4 +71,8 @@ ul li img{
 }
 a:hover{
     color: #EB6019;
+}
+#userdash{
+    margin: 0px;
+    margin-right: 28px;
 }

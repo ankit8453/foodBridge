@@ -1,0 +1,91 @@
+.right-container{
+    position: relative;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 2px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    position: relative;
+    background-color: transparent;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    
+    /* background-color: #333; */
+}
+nav li{
+    margin: 0 13px;
+    padding: 0 13px;
+}
+.user-info{
+    display: flex;
+}
+.user-info .user-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.welcome-Msg{
+    color: rgb(47, 56, 66);
+    font-size: 1.5rem;
+}
+.sp-x{
+    padding-left:10px;
+}
+.user-name{
+    font-size: 1.5rem;
+    color: #3b3a3aa7;
+    padding-left: 10px;
+    font-weight: 100;
+    margin-left: 5px;
+}
+.user-img{
+    padding-left: 40px;
+    margin-left: 40px;
+}
+.drawer{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 47px;
+    top: 12px;
+    /* visibility: hidden; */
+}
+.btn-down-drawer{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.container{
+    margin: 0px 35px;
+    display: flex;
+
+}
+.contribute-btn button {
+    background-color: #EB6019;
+    color: white;
+    border: none;
+    width: 180px;
+    border-radius: 10px;
+    padding: 7px 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.contribute-btn button a{
+    text-decoration: none;
+    color: white;
+}
+.contribute-btn button:hover{
+    background-color: #EB7900;
+}
