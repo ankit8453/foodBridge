@@ -11,7 +11,7 @@
     height: 100px;
 }
 .home-text{
-    width: 52%;
+    width: 59%;
     margin-top: 87px;
 }
 .home-text button{
@@ -34,7 +34,10 @@
 }
 .right-elements #home-img-1 img{
     max-height: 350px;
-    margin: 127px 59px 0px 0px;
+    margin: 150px 59px 0px 0px;
+    width: 33vw;
+    box-shadow: 10px 8px 15px black;
+    filter: contrast(1.4);
 }
 .right-elements #home-img-2 img{
     margin-top: 10px;
