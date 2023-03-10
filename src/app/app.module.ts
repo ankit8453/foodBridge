@@ -6,18 +6,19 @@ import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomepageComponent } from './header-pages/homepage/homepage.component';
 import { HeaderComponent } from './header-pages/header/header.component';
-import { AboutUsComponent } from './header-pages/about-us/about-us.component';
-import { OurMissionComponent } from './header-pages/our-mission/our-mission.component';
+import { AboutUsComponent } from './header-pages/homepage/about-us/about-us.component';
+import { OurMissionComponent } from './header-pages/homepage/our-mission/our-mission.component';
 import { JoinUsComponent } from './join-us/join-us.component';
 import { ForgetPassComponent } from './forget-pass/forget-pass.component';
-import { UserDashboardComponent } from './header-pages/user-dashboard/user-dashboard.component';
-import { UserProfileComponent } from './header-pages/user-dashboard/user-profile/user-profile.component';
-import { HelpSupportComponent } from './header-pages/user-dashboard/help-support/help-support.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { UserProfileComponent } from './user-dashboard/user-profile/user-profile.component';
+import { HelpSupportComponent } from './user-dashboard/help-support/help-support.component';
 import { Homesection1Component } from './header-pages/homepage/homesection1/homesection1.component';
-import { LeftNavComponent } from './header-pages/user-dashboard/left-nav/left-nav.component';
-import { SettingsComponent } from './header-pages/user-dashboard/settings/settings.component';
-import { MainDashboardComponent } from './header-pages/user-dashboard/main-dashboard/main-dashboard.component';
+import { LeftNavComponent } from './user-dashboard/left-nav/left-nav.component';
+import { SettingsComponent } from './user-dashboard/settings/settings.component';
+import { MainDashboardComponent } from './user-dashboard/main-dashboard/main-dashboard.component';
 import { HeaderPagesComponent } from './header-pages/header-pages.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 // import { UserDashboardRoutingModule } from './user-dashboard/user-dashboard-routing.module';
 
 
@@ -40,6 +41,7 @@ import { HeaderPagesComponent } from './header-pages/header-pages.component';
     SettingsComponent,
     MainDashboardComponent,
     HeaderPagesComponent,
+    PagenotfoundComponent,
   
 
   ],
