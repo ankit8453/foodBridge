@@ -11,6 +11,7 @@ import { UserProfileComponent } from './header-pages/user-dashboard/user-profile
 import { HelpSupportComponent } from './header-pages/user-dashboard/help-support/help-support.component';
 import { SettingsComponent } from './header-pages/user-dashboard/settings/settings.component';
 import { HeaderPagesComponent } from './header-pages/header-pages.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
   // {path:'', component:HomepageComponent, },
@@ -26,18 +27,11 @@ const routes: Routes = [
       {path:'settings', component:SettingsComponent},
     ]},
   ]},
-  // {path:'homepage', pathMatch:'prefix', component:HomepageComponent,},
-  // {path:'about-us', pathMatch:'full', component:AboutUsComponent, },
-  // {path:'our-mission', pathMatch:'full', component:OurMissionComponent, },
-  {path:'join-us', component:JoinUsComponent, },
-  // {path:'user-dashboard', component:UserDashboardComponent, children:[
-  //   {path:'main-dashboard', component:MainDashboardComponent},
-  //   {path:'user-profile', component:UserProfileComponent},
-  //   {path:'help-support', component:HelpSupportComponent},
-  //   {path:'settings', component:SettingsComponent},
-  // ]},
-  {path:'header-pages/join-us', redirectTo:'join-us'},
-  {path:'login', component:LoginComponent},
+  {path:'header-pages/join-us', redirectTo:'login'},
+  {path:'sign-up', component:SignUpComponent,},
+  {path:'login/sign-up', redirectTo:'sign-up'},
+  {path:'sign-up/login', redirectTo:'login'},
+  {path:'login',  component:LoginComponent, },
   // {path:'/homepage', component:HomepageComponent},
 ];
 

@@ -3,57 +3,80 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    
+    width: 100vw;
+    justify-content: space-between;
 }
 .tittle{
     font-size:3ch;
     font-weight: 800;
 }
 .formWrapper{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
     background-color: #ffb88c;
-    height: 85vh;
-    width: 400px;
+    height: fit-content;
+    width: 300px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 7px;
     align-items: center;
+    margin-right: 140px;
 }
 .ap{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 7px;
     width: 80%;
 }
 input{
-    padding: 15px;
+    padding: 7px;
     border: none;
     border-radius: 5px;
+    margin-bottom: 6px;
+}
+input:focus{
+    outline: none;
+}
+label{
+    margin-bottom: -4px;
 }
 select{
-    padding: 15px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
 }
 .logo{
-    height: 120px;
+    height: 90px;
+    padding-top: 20px;
 }
 button{
-    background-color: #ed6926 ;
+    background-color: hsl(20, 85%, 54%) ;
+    border: none;
+    color: white;
+    padding: 6px;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 60%;
+    /* background-color: #ed6926 ;
     border: none;
     color: white;
     padding: 15px;
     font-weight: 700;
     border-radius: 10px;
-    width: 60%;
+    width: 60%; */
     
 }
 .image{
-    height: 700px;
-    width: 950px;
-    padding: 20px;
+    height: 550px;
+    width: 55vw;
+}
+p{
+    font-size: 13px;
+    margin: 8px;
+}
+a{
+    text-decoration: none;
 }
