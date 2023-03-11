@@ -8,21 +8,52 @@
         <li class="nav-item">
         <span class="user-name">$User_Name</span>
         </li>
-        <li class="nav-item user-img">
-        <img src="assets/User-Profile-PNG-File.png" width="50px"  alt="UserImage">
-        </li>
-       
-        <li class="nav-item drawer">
-            <button class="btn-down-drawer">
-            <img src="/assets/downarrow.png" width="20px"  alt="UserImage">
-            </button>
-        </li>
+         
        
         </ul>
+        <div class="nav-item user-img">
+            <img src="assets/User-Profile-PNG-File.png" width="50px"  alt="UserImage">
+            </div>    
+        <div class="profile">
+            <button class="btn-down-drawer">
+                <img src="/assets/downarrow.png" width="20px"  alt="UserImage">
+                </button>
+            <div class="drawer">
+              <a href="#">Edit Profile</a>
+              <a (click)=confirmBox()>Log Out</a>
+            </div>
+          </div>
     </nav>
+    <!-- <div class="prev-records"> -->
+        <ul class="box-info">
+            <li>
+                <i class="fa fa-gift" aria-hidden="true"></i>
+                <span class="text">
+                    <h3>2</h3>
+                    <p>Your Past Contribution Orders</p>
+                </span>
+            </li>
+            <li>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <span class="text">
+                    <h3>102</h3>
+                    <p>New Orders</p>
+                </span>
+            </li>
+            <li>
+                <i class="fa fa-group"></i>
+                <span class="text">
+                    <h3>10+</h3>
+                    <p>NGO near you ...</p>
+                </span>
+            </li>
+        </ul>
+    <!-- </div> -->
     <div class="container">
+
         <div class="contribute-btn">
             <button class="btn-contribute">Contribute Now</button>
+
         </div>
     </div>
    
