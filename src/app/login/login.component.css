@@ -25,7 +25,8 @@
 .ap{
     /* padding-top: 20px; */
     font-size: 13px;
-    padding-bottom: 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -63,10 +64,13 @@ button{
     
 }
 .image{
-    height: 100%;
-    margin-left: 30px;
+    height: 85%;
+    margin: 40px 0px 0px 60px;
 }
 p{
     font-size: 13px;
     margin: 8px;
+}
+a{
+    text-decoration: none;
 }
