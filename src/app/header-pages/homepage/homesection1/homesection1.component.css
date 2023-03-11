@@ -1,5 +1,5 @@
-.home-body{
-    background-image: linear-gradient(to bottom, #f3c0a1 , #ffffff);
+.home-body{background-image: linear-gradient(to bottom, #f3c0a1 , #ffffff);
+    
     height: 500px;
     display: flex;
     justify-content: space-between;
