@@ -19,6 +19,8 @@ import { SettingsComponent } from './user-dashboard/settings/settings.component'
 import { MainDashboardComponent } from './user-dashboard/main-dashboard/main-dashboard.component';
 import { HeaderPagesComponent } from './header-pages/header-pages.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { SearchComponent } from './user-dashboard/main-dashboard/search/search.component';
+import { AddServeFoodComponent } from './user-dashboard/main-dashboard/add-serve-food/add-serve-food.component';
 // import { UserDashboardRoutingModule } from './user-dashboard/user-dashboard-routing.module';
 
 
@@ -42,6 +44,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     MainDashboardComponent,
     HeaderPagesComponent,
     PagenotfoundComponent,
+    SearchComponent,
+    AddServeFoodComponent,
   
 
   ],
