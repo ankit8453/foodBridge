@@ -1,9 +1,6 @@
 .home-body{
-    /* background-image: linear-gradient(to bottom, #f3c0a1 , #ffffff); */
-    /* background-image: url('/assets/1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%; */
+    padding-top: 54px;
+    background-image: linear-gradient(to top, #f3c0a1 2% , transparent 20%);
     height: 90vh;
     display: flex;
     justify-content: space-between;
@@ -20,7 +17,7 @@
 .left-elements{
     display: flex;
     width: 60vw;
-    background-image: linear-gradient(90deg, #f3c0a1 40%, transparent);
+    background-image: linear-gradient(90deg, #f3c0a1 25%, transparent 70%);
 }
 .left-img{
     height: 100px;
