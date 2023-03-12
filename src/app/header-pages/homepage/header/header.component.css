@@ -72,6 +72,15 @@ ul li img{
 a:hover{
     color: #EB6019;
 }
+a:hover::after{
+    content:""; 
+    float:left;
+    width:100%; 
+    height:2.5px; 
+    border-radius: 10px;
+    background: #EB6019;
+    color: #EB6019; 
+}
 #userdash{
     margin: 0px;
     margin-right: 28px;

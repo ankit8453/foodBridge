@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomepageComponent } from './header-pages/homepage/homepage.component';
-import { HeaderComponent } from './header-pages/header/header.component';
+import { HeaderComponent } from './header-pages/homepage/header/header.component';
 import { AboutUsComponent } from './header-pages/homepage/about-us/about-us.component';
 import { OurMissionComponent } from './header-pages/homepage/our-mission/our-mission.component';
 import { JoinUsComponent } from './join-us/join-us.component';

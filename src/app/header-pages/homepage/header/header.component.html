@@ -4,9 +4,9 @@
         <img src="assets/foodbridgelogo.png" alt="logo" />
     <div class="nav-elements">
         <ul>
-            <li routerLinkActive="active"><a routerLink="homepage">Home</a></li>
-            <li routerLinkActive="active"><a routerLink="about-us">About Us</a></li>
-            <li routerLinkActive="active"><a routerLink="our-mission">Our Mission</a></li>
+            <li routerLinkActive="active"><a routerLink="homepage" (click)="gotoHome()">Home</a></li>
+            <li routerLinkActive="active"><a (click)="gotoOurMission()" >Our Mission</a></li>
+            <li routerLinkActive="active"><a (click)="gotoAboutus()">About Us</a></li>
             <li routerLinkActive="active"><a routerLink="join-us">Join Us</a></li>
             <li id="inputngo">Find NGO near you :<input type="text" placeholder="Nearby NGO?"/>
             </li>

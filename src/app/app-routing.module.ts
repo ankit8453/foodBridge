@@ -1,5 +1,5 @@
 import { NgModule, Component } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { HomepageComponent } from './header-pages/homepage/homepage.component';
 import { AboutUsComponent } from './header-pages/homepage/about-us/about-us.component';
 import { OurMissionComponent } from './header-pages/homepage/our-mission/our-mission.component';
@@ -18,8 +18,8 @@ const routes: Routes = [
   {path:'', redirectTo:'header-pages/homepage', pathMatch:'full'},
   {path:'header-pages', component:HeaderPagesComponent, children:[
     {path:'homepage', component:HomepageComponent, },
-    {path:'about-us', component:AboutUsComponent, },
-    {path:'our-mission', component:OurMissionComponent, },
+    // {path:'about-us', component:AboutUsComponent, },
+    // {path:'our-mission', component:OurMissionComponent, },
   ]},
   {path:'header-pages/user-dashboard', redirectTo:'user-dashboard'},
   {path:'user-dashboard', component:UserDashboardComponent, children:[
@@ -37,8 +37,14 @@ const routes: Routes = [
   {path:'**', component:PagenotfoundComponent, pathMatch:'full'},
 ];
 
+const routerOptions: ExtraOptions = {
+  anchorScrolling: "enabled"
+  //scrollPositionRestoration: "enabled"
+};
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, routerOptions)],
 exports: [RouterModule]
 })
 export class AppRoutingModule { }

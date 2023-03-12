@@ -12,3 +12,9 @@ button:hover{
 .active a{
     color: #EB6019 ;
 }
+a{
+    cursor: pointer;
+}
+html {
+    scroll-behavior: smooth;
+  }
