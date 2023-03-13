@@ -7,17 +7,19 @@
 .container {
   padding: 20px;
   /* background-color: #faecdf; */
+  box-shadow: 0px 0px 40px #faecdf;
   border-radius: 10px;
   height: fit-content;
 }
 .container:hover{
-  box-shadow: 0px 0px 40px #faecdf;
+  box-shadow: 0px 0px 10px rgb(48 48 48);
+  background-color: #faecdf;
 }
 
 h1 {
   margin-top: 8px;
-  margin-bottom: 8px;
   padding: 30px;
+  padding-bottom: 0px;
 }
 
 .content {
@@ -49,5 +51,10 @@ img {
   margin-left: -90px;
 }
 /* p{
-  text-shadow: 1.5px 1.5px 3px #faecdf;
+  text-shadow: 0px 1px 2px orange;
+  color: white;
 } */
+h1{
+  color: black;
+  border-bottom: 1px solid black;
+}

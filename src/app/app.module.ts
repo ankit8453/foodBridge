@@ -21,6 +21,7 @@ import { HeaderPagesComponent } from './header-pages/header-pages.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { SearchComponent } from './user-dashboard/main-dashboard/search/search.component';
 import { AddServeFoodComponent } from './user-dashboard/main-dashboard/add-serve-food/add-serve-food.component';
+import { FooterComponent } from './header-pages/footer/footer.component';
 // import { UserDashboardRoutingModule } from './user-dashboard/user-dashboard-routing.module';
 
 
@@ -46,6 +47,7 @@ import { AddServeFoodComponent } from './user-dashboard/main-dashboard/add-serve
     PagenotfoundComponent,
     SearchComponent,
     AddServeFoodComponent,
+    FooterComponent,
   
 
   ],
