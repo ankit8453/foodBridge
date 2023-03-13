@@ -1,19 +1,22 @@
 .ourMission {
-  padding: 63px 100px;
+  padding: 63px 10vw;
   height: fit-content;
-  background-image: url("/assets/layered-waves-1.svg");
+  background: url("/assets/layered-waves-1.svg") no-repeat center center/cover;
 }
 
 .container {
   padding: 20px;
-  background-color: #faecdf;
+  /* background-color: #faecdf; */
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgb(48, 48, 48);
   height: fit-content;
+}
+.container:hover{
+  box-shadow: 0px 0px 40px #faecdf;
 }
 
 h1 {
-    margin-top: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   padding-left: 30px;
 }
 
@@ -35,12 +38,15 @@ h1 {
 
 img {
   width: 44vw;
-  box-shadow: -5px 5px 10px rgb(48, 48, 48);
+  box-shadow: -5px 0px 10px #faecdf;
 }
 
 .image {
   padding: 20px;
-  -webkit-mask-image: linear-gradient(to right, black 80%, transparent);
+  -webkit-mask-image: linear-gradient(to right, black 85%, transparent);
   mask-image: linear-gradient(to right, black, transparent);
   margin-left: -90px;
 }
+/* p{
+  text-shadow: 1.5px 1.5px 3px #faecdf;
+} */
