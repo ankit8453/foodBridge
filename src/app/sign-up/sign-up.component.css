@@ -1,6 +1,7 @@
 .formContainer{
-    background-color: #fdd2b7;
+    background: linear-gradient(to bottom, #f3c0a1 , #fcefe4f7);
     height: 100vh;
+    max-height: fit-content;
     display: flex;
     align-items: center;
     width: 100vw;
@@ -60,14 +61,9 @@ button{
     font-weight: 700;
     border-radius: 10px;
     width: 60%;
-    /* background-color: #ed6926 ;
-    border: none;
-    color: white;
-    padding: 15px;
-    font-weight: 700;
-    border-radius: 10px;
-    width: 60%; */
-    
+}
+button:hover{
+    background-color: hsla(20, 97%, 63%, 0.979) ;
 }
 .image{
     height: 550px;

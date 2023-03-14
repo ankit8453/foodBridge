@@ -160,11 +160,12 @@ nav li{
 .box-info p{
     font-size: 1.2rem;
     margin: 0;
-    padding: 2px 12px 0 8px;
+    padding: 2px 12px 0 32px;
 }
 .box-info h3{
     margin: -23px -23px -23px 8px;
     padding: 1px;
+    display: inline;
 }
 .list-info i{
     font-size: 1.8rem;
