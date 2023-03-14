@@ -20,7 +20,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 3px;
     align-items: center;
     margin-right: 140px;
 }
@@ -46,9 +46,12 @@ label{
     margin-bottom: -4px;
 }
 select{
-    padding: 10px;
+    padding: 7px;
     border: none;
     border-radius: 5px;
+}
+select:focus{
+    outline: none;
 }
 .logo{
     height: 90px;
