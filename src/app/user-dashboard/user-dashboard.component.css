@@ -14,6 +14,8 @@
 
 }
 #content{
+    background-image: linear-gradient(to bottom, #f3c0a1 , #fdebdbf7, white);
     padding: 18px;
     margin-left: 230px;
+    width: fit-content;
 }
