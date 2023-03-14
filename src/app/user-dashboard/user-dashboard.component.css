@@ -6,11 +6,14 @@
 }
 #side-navbar{
     display: block;
-    /* width:230px;
-    height: 800px; */
-    position: sticky;
+    width:230px;
+    height: 100vh;
+    position: fixed;
     background-color: #F4F2F0;
     left: 0;
 
 }
-#content{padding: 18px;}
+#content{
+    padding: 18px;
+    margin-left: 230px;
+}

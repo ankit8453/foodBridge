@@ -1,5 +1,5 @@
 .formContainer{
-    background-image: linear-gradient(to bottom, #f3c0a1 , #fdebdbf7);
+    background: linear-gradient(to bottom, #f3c0a1 , #fcefe4f7);
     height: 100vh;
     display: flex;
     align-items: center; 
@@ -26,7 +26,6 @@
     /* padding-top: 20px; */
     font-size: 13px;
     padding-top: 20px;
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -73,4 +72,10 @@ p{
 }
 a{
     text-decoration: none;
+}
+.forgetpass{
+    align-self: flex-end;
+    font-size: 13px;
+    padding-bottom: 14px;
+    padding-right: 30px;
 }

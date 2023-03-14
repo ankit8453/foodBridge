@@ -8,7 +8,7 @@
     content: "";
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 108vh;
     background: url("/assets/colouredPatterns.svg") no-repeat top center/cover;
     z-index: -1;
     

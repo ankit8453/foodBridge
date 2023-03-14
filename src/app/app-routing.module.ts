@@ -12,6 +12,7 @@ import { HeaderPagesComponent } from './header-pages/header-pages.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ForgetPassComponent } from './forget-pass/forget-pass.component';
+import { ResetPasswordComponent } from './user-dashboard/reset-password/reset-password.component';
 
 const routes: Routes = [
   // {path:'', component:HomepageComponent, },
@@ -23,16 +24,16 @@ const routes: Routes = [
   ]},
   {path:'header-pages/user-dashboard', redirectTo:'user-dashboard'},
   {path:'user-dashboard', component:UserDashboardComponent, children:[
-      {path:'main-dashboard', component:MainDashboardComponent},
       {path:'user-profile', component:UserProfileComponent},
+      {path:'main-dashboard', component:MainDashboardComponent},
       {path:'help-support', component:HelpSupportComponent},
-      {path:'forget-pass', component:ForgetPassComponent}
-
+      {path:'reset-password', component:ResetPasswordComponent}
   ]},
   {path:'user-dashboard/homepage', redirectTo:'header-pages/homepage'},
   {path:'header-pages/join-us', redirectTo:'login'},
   {path:'sign-up', component:SignUpComponent,},
   {path:'login/sign-up', redirectTo:'sign-up'},
+  {path:'login/forget-pass', component:ForgetPassComponent},
   {path:'sign-up/login', redirectTo:'login'},
   {path:'login',  component:LoginComponent, },
   {path:'**', component:PagenotfoundComponent, pathMatch:'full'},
