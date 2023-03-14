@@ -12,7 +12,8 @@
     font-weight: 800;
 }
 .formWrapper{
-    padding-bottom: 12px;
+
+    padding-bottom: 10px;
     background-color: #ffb88c;
     height: fit-content;
     width: 300px;
@@ -22,10 +23,11 @@
     gap: 7px;
     align-items: center;
     margin-right: 140px;
+    margin-top: 34px;
 }
 .ap{
     font-size: 13px;
-    padding-top: 15px;
+    padding-top: 12px;
     padding-bottom: 15px;
     display: flex;
     flex-direction: column;
