@@ -11,7 +11,7 @@
     position: fixed;
     background-color: #F4F2F0;
     left: 0;
-
+    /* border: 3px solid#EB6019; */
 }
 #content{
     background-image: linear-gradient(to bottom, #f3c0a1 , #fdebdbf7, white);
