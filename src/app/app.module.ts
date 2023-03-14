@@ -15,7 +15,6 @@ import { UserProfileComponent } from './user-dashboard/user-profile/user-profile
 import { HelpSupportComponent } from './user-dashboard/help-support/help-support.component';
 import { Homesection1Component } from './header-pages/homepage/homesection1/homesection1.component';
 import { LeftNavComponent } from './user-dashboard/left-nav/left-nav.component';
-import { SettingsComponent } from './user-dashboard/settings/settings.component';
 import { MainDashboardComponent } from './user-dashboard/main-dashboard/main-dashboard.component';
 import { HeaderPagesComponent } from './header-pages/header-pages.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -41,13 +40,13 @@ import { FooterComponent } from './header-pages/footer/footer.component';
     LeftNavComponent,
     UserProfileComponent,
     HelpSupportComponent,
-    SettingsComponent,
     MainDashboardComponent,
     HeaderPagesComponent,
     PagenotfoundComponent,
     SearchComponent,
     AddServeFoodComponent,
     FooterComponent,
+    
   
 
   ],

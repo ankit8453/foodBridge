@@ -8,10 +8,10 @@ import { LoginComponent } from './login/login.component';
 import { MainDashboardComponent } from './user-dashboard/main-dashboard/main-dashboard.component';
 import { UserProfileComponent } from './user-dashboard/user-profile/user-profile.component';
 import { HelpSupportComponent } from './user-dashboard/help-support/help-support.component';
-import { SettingsComponent } from './user-dashboard/settings/settings.component';
 import { HeaderPagesComponent } from './header-pages/header-pages.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ForgetPassComponent } from './forget-pass/forget-pass.component';
 
 const routes: Routes = [
   // {path:'', component:HomepageComponent, },
@@ -26,7 +26,8 @@ const routes: Routes = [
       {path:'main-dashboard', component:MainDashboardComponent},
       {path:'user-profile', component:UserProfileComponent},
       {path:'help-support', component:HelpSupportComponent},
-      {path:'settings', component:SettingsComponent},
+      {path:'forget-pass', component:ForgetPassComponent}
+
   ]},
   {path:'user-dashboard/homepage', redirectTo:'header-pages/homepage'},
   {path:'header-pages/join-us', redirectTo:'login'},

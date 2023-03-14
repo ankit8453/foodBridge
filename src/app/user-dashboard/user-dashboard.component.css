@@ -5,11 +5,12 @@
     /* justify-content: space-between; */
 }
 #side-navbar{
-    width:230px;
-    height: 800px;
-    background-color: #F4F2F0;
+    display: block;
+    /* width:230px;
+    height: 800px; */
     position: sticky;
+    background-color: #F4F2F0;
     left: 0;
 
 }
-#content{padding: 20px;}
+#content{padding: 18px;}

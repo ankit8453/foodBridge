@@ -50,13 +50,14 @@ nav li{
     font-weight: 100;
     margin-left: 5px;
 }
-.user-img{
+/* .user-img{
     padding-left: 40px;
     margin-left: 40px;
-}
+} */
 .user-img img{
+    align-items: flex-end;
     position: relative;
-    margin-left: 10px;
+    margin-left: 70px;
     padding-left: 30px;
     border-radius: 50%;
 }
@@ -85,25 +86,7 @@ nav li{
     text-align: center;
 
 }
-.contribute-btn button {
-    background-color: #EB6019;
-    color: white;
-    border: none;
-    width: 180px;
-    border-radius: 10px;
-    padding: 7px 20px;
-    margin-top: 20px;
-    margin-left: 32px;
-    font-size: 15px;
-    font-weight: 600;
-}
-.contribute-btn button a{
-    text-decoration: none;
-    color: white;
-}
-.contribute-btn button:hover{
-    background-color: #EB7900;
-}
+
 /* drawer  for update Logout button*/
 .profile {
   position: relative;

@@ -2,7 +2,9 @@
     background-color: #fdd2b7;
     height: 100vh;
     display: flex;
-    align-items: center; 
+    align-items: center;
+    width: 100vw;
+    justify-content: space-between;
 }
 .tittle{
     font-size:3ch;

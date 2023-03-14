@@ -28,11 +28,13 @@
     padding: 0px 30px;
     justify-content: center;
     align-items: center;
-}
-.image:hover{
     -webkit-mask-image: linear-gradient(to bottom, black 68%, transparent 85%);
     mask-image: linear-gradient(to bottom, black, transparent);
 }
+/* .image:hover{
+    -webkit-mask-image: linear-gradient(to bottom, black 68%, transparent 85%);
+    mask-image: linear-gradient(to bottom, black, transparent);
+} */
 /* img:hover{
     border-bottom-left-radius: 45%;
     border-bottom-right-radius: 45%;
@@ -54,13 +56,14 @@ img{
 }
 .Content::before{
     content: "";
-    position: absolute;
+    position: absolute !important;;
     background-color: #eb6019;
     z-index: -1;
     width: 40%;
-    height: 50%;
+    height: 75%;
     opacity: 0.65;
-    margin: 70px;
+    margin: 40px;
+    padding: 20px;
     border-radius: 10px;
 }
 .Content::before:hover{

@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .home-body::before{
     content: "";
     position: absolute;
@@ -40,6 +41,12 @@
     font-size: 15px;
     font-weight: 600;
 }
+.home-text h1{
+    font-size: 1.6rem;
+    margin-top: 45px;
+    margin-bottom: 12px;
+    line-height: 2.6rem;
+}
 .home-text p{
     font-size: 15px;
     margin-top: 15px;
@@ -60,6 +67,7 @@
     margin-top: 10px;
     max-height: 200px;
 }
+
 /* h1{
     color: #EB6019;
     text-shadow: 2px 2px 4px #faecdf;
