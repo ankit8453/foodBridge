@@ -1,6 +1,9 @@
 .ourMission {
-  padding: 17vh 10vw;
-  height: fit-content;
+  padding: 0 10vw;
+  height: 90vh;
+  max-height: fit-content;
+  display: flex;
+  align-items: center;
   background: url("/assets/layered-waves-1.svg") no-repeat center center/cover;
 }
 

@@ -1,31 +1,28 @@
-import { Component, OnInit } from '@angular/core';
-import { ViewportScroller } from '@angular/common';
-import { Router } from '@angular/router';
+import { Component} from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import { IsActiveMatchOptions } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit{
+
+export class HeaderComponent {
+
+  // private activeSiteSection: string;
+  
   constructor(
     private router: Router,
-    private scroller: ViewportScroller
-  ) {}
+    private route: ActivatedRoute,
+  ){}
 
-  ngOnInit() {
-    this.router.navigate(['']);
-  }
-
-  gotoAboutus() {
-    this.scroller.scrollToAnchor('AboutUs');
-  }
-  gotoOurMission() {
-    this.scroller.scrollToAnchor('OurMission');
-  }
-  gotoHome() {
-    // this.scroller.scrollToAnchor('HomeSection1');
-    window.scrollTo(0, 0);
-  }
-}
+  public linkActiveOptions: IsActiveMatchOptions = {
+    matrixParams: 'exact',
+    queryParams: 'exact',
+    paths: 'exact',
+    fragment: 'exact',
+  };
+ 
+ }
 

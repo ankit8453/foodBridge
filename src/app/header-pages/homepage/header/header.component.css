@@ -70,9 +70,12 @@ ul li img{
   color: #EB6019; 
    
 }
-a:hover{
+.active a{
     color: #EB6019;
 }
+/* a:hover{
+    color: #EB6019;
+} */
 a:hover::after{
     content:""; 
     float:left;

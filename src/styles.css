@@ -14,12 +14,12 @@ button{
     background-color: hsl(20, 85%, 54%);
     color: white;
 }
-.active a{
-    color: #EB6019 ;
-}
 a{
     cursor: pointer;
 }
 html {
     scroll-behavior: smooth;
+}
+input:focus{
+    outline: none;
 }

@@ -18,11 +18,11 @@ const routes: Routes = [
   // {path:'', component:HomepageComponent, },
   {path:'', redirectTo:'header-pages/homepage', pathMatch:'full'},
   {path:'header-pages', component:HeaderPagesComponent, children:[
-    {path:'homepage', component:HomepageComponent, children:[
+    {path:'homepage', component:HomepageComponent, pathMatch:'full', children:[
       {path:'sign-up', component:SignUpComponent},
     ]},
-    // {path:'about-us', component:AboutUsComponent, },
-    // {path:'our-mission', component:OurMissionComponent, },
+    {path:'#AboutUs', component:AboutUsComponent, },
+    {path:'#OurMission', component:OurMissionComponent, pathMatch:'prefix'},
   ]},
   {path:'header-pages/user-dashboard', redirectTo:'user-dashboard'},
   {path:'user-dashboard', component:UserDashboardComponent, children:[
@@ -47,8 +47,9 @@ const routerOptions: ExtraOptions = {
 };
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes),
-    RouterModule.forRoot(routes, routerOptions)],
+  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled',scrollOffset: [0, 64]})
+],
 exports: [RouterModule]
 })
 export class AppRoutingModule { }
