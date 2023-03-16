@@ -7,13 +7,13 @@ import { Router } from '@angular/router';
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css']
 })
-export class HomepageComponent implements OnInit{
-  constructor(
-    private router: Router,
-    private scroller: ViewportScroller
-  ) {}
+export class HomepageComponent {
+  // constructor(
+  //   private router: Router,
+  //   private scroller: ViewportScroller
+  // ) {}
 
-  ngOnInit() {
-    this.router.navigate(['']);
-  }
+  // ngOnInit() {
+  //   this.router.navigate(['']);
+  // }
 }

@@ -1,9 +1,11 @@
-
+.main{
+    margin: 20px 0 0 20px;
+}
 .page-header .breadcrumb {
     margin-top: 0;
     background-color: transparent;
     color: #6c757d;
-    font-size: 1.1rem;
+    font-size: 0.99rem;
     font-weight: 500;
     margin-bottom: 0;
     padding: 0;
@@ -31,7 +33,7 @@
     padding-top: 20px;
     padding-left: 15px;
     background-color: rgb(255, 255, 255);
-    width: 866px;
+    width: 826px;
     height: 475px;
     border: 5px solid rgba(239, 236, 231, 0.888);
     border-radius: 12px;
@@ -80,7 +82,7 @@
     .edit-icon{
         position: relative;
         bottom: 430px;
-        left: 850px;
+        left: 755px;
         float: right;
         margin-top: 10px;
         margin-right: 10px;
@@ -127,7 +129,7 @@
 
     div .edit-icon{
         width: 30px;
-        margin-left: -22px;
+        margin-left: -1px;
     }
     .edit-icon i{
         font-size: 1.5rem;

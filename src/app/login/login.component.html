@@ -9,7 +9,8 @@
             <label for="password-field">Please enter Password</label>
             <input type="password" id="password-field" placeholder="**********"/>
         </form>
-        <button>Sign In</button>
+        <a class="forgetpass" routerLink="forget-pass">Forgot password?</a>
+        <button (click)="LoggedIn()">Sign In</button>
         
         <p>Don't have an account? <a routerLink="sign-up">Register</a></p>
     </div>

@@ -10,7 +10,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    width: 750px;
+    width: 100%;
     position: relative;
     background-color: transparent;
 }
@@ -20,13 +20,14 @@ nav ul{
     padding: 0;
     overflow: hidden;
     display: flex;
+    align-items: center;
     
     /* background-color: #333; */
 }
-nav li{
+/* nav li{
     margin: 0 13px;
     padding: 0 13px;
-}
+} */
 .user-info{
     display: flex;
 }
@@ -50,13 +51,20 @@ nav li{
     font-weight: 100;
     margin-left: 5px;
 }
-.user-img{
+
+.right-elements{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+/* .user-img{
     padding-left: 40px;
     margin-left: 40px;
-}
+} */
 .user-img img{
+    align-items: flex-end;
     position: relative;
-    margin-left: 10px;
+    margin-left: 70px;
     padding-left: 30px;
     border-radius: 50%;
 }
@@ -85,28 +93,11 @@ nav li{
     text-align: center;
 
 }
-.contribute-btn button {
-    background-color: #EB6019;
-    color: white;
-    border: none;
-    width: 180px;
-    border-radius: 10px;
-    padding: 7px 20px;
-    margin-top: 20px;
-    margin-left: 32px;
-    font-size: 15px;
-    font-weight: 600;
-}
-.contribute-btn button a{
-    text-decoration: none;
-    color: white;
-}
-.contribute-btn button:hover{
-    background-color: #EB7900;
-}
+
 /* drawer  for update Logout button*/
 .profile {
   position: relative;
+  align-self: center;
 }
 
 .profile p {
@@ -120,8 +111,8 @@ nav li{
   display: none;
   position: absolute;
   z-index: 1;
-  top: 40px;
-  right: -52px;
+  top: 10px;
+  right: -59px;
   background-color: #ffffffcc;
   margin-top: 10px;
   
@@ -134,9 +125,10 @@ nav li{
 }
 
 .drawer a {
+    font-size: 13px;
   display: block;
-  padding: 10px;
-  width: 75px;
+  padding: 7px;
+  width: 70px;
   color: #333;
   text-decoration: none;
 }
@@ -177,11 +169,12 @@ nav li{
 .box-info p{
     font-size: 1.2rem;
     margin: 0;
-    padding: 2px 12px 0 8px;
+    padding: 2px 12px 0 32px;
 }
 .box-info h3{
     margin: -23px -23px -23px 8px;
     padding: 1px;
+    display: inline;
 }
 .list-info i{
     font-size: 1.8rem;
