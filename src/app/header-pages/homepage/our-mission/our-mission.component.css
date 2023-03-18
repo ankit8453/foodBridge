@@ -71,10 +71,12 @@ p{
 a{
   font-size: 1.1rem;
   color: rgb(43, 40, 40);
+  opacity: 0.8;
 }
 a:hover{
-  color:darkorange;
+  color:rgb(255, 115, 0);
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* #more {display: none;} */
