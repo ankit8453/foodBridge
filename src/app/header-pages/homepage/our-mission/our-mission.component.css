@@ -60,5 +60,21 @@ h1{
   color: black;
   border-bottom: 1px solid black;
 }
+p{
+  color: black;
+  font-weight: 200;
+  font-size: 1rem;
+  letter-spacing: normal;
+  line-height: 1.5rem;
+}
 /* read  more*/
-#more {display: none;}
+a{
+  font-size: 1.1rem;
+  color: rgb(43, 40, 40);
+}
+a:hover{
+  color:darkorange;
+  text-decoration: none;
+}
+
+/* #more {display: none;} */
