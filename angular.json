@@ -93,6 +93,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Food-Bridge:build:production",
+            "firebaseProject": "food-bridge-8453",
+            "firebaseHostingSite": "food-bridge-8453"
+          }
         }
       }
     }

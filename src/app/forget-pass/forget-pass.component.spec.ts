@@ -20,4 +20,4 @@ describe('ForgetPassComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});
+}); 
