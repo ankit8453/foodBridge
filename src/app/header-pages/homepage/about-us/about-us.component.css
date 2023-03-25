@@ -71,9 +71,13 @@ img{
 }
 
 p{
+    font-size: 1.1rem !important;
     color: white;
     padding: 0px 30px 20px 30px;
+  line-height: 1.5rem;
+
 }
+
 h1{
     color: white;
     border-bottom: 1px solid white;

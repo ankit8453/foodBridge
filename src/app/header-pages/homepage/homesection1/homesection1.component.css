@@ -4,6 +4,7 @@
     height: 90vh;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10vh;
 }
 
 .home-body::before{
