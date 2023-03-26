@@ -1,4 +1,4 @@
-.navbar{
+.header{
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -6,28 +6,29 @@
     top: 0px;
     z-index: 100;
 }
-.navbar img{
+.header img{
     height: 15px;
 }
-.nav{
+.head{
     display:flex;
     justify-content: space-between;
     background-color: #F4F2F0;
-    height: 54px;
+    height: 57px;
 }
-.nav img{
+.head img{
     margin: auto 30px;
     height: 50px;
     width: 100px;
 }
-.nav ul{
+.head ul{
     display: inline-flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    height: inherit;
     align-items: center;
 }
-.nav li{
+.head li{
     margin-left: 17px;
     margin-right: 17px;
 }
@@ -37,7 +38,7 @@ a{
     /* font-size: 17px; */
 }
 ul li img{
-    height: 20px;
+    height: 28px;
     margin: 0px;
     width: 20px;
     cursor: pointer;
@@ -49,7 +50,7 @@ ul li img{
     color: #7B7B7B;
     margin-right: 0px;
 }
-.nav-elements input{
+.head-elements input{
     border: none;
     background-color: #F4F2F0;
     border-bottom: 1px solid #7B7B7B;
@@ -57,7 +58,7 @@ ul li img{
     font-size: 10px;
     width: 80%;
 }
-.nav-elements input:focus{
+.head-elements input:focus{
     outline: none;
 }
 .active a::after{

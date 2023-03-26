@@ -111,17 +111,15 @@ nav ul{
   display: none;
   position: absolute;
   z-index: 1;
-  top: 10px;
-  right: -59px;
+  top: 15px;
+  right: -40px;
   background-color: #ffffffcc;
   margin-top: 10px;
-  
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .profile:hover .drawer {
-  display: block;
-  
+  display: block; 
 }
 
 .drawer a {
