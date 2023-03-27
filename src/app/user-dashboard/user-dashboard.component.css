@@ -7,7 +7,7 @@
 #side-navbar{
     display: block;
     width:230px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     background-color: #F4F2F0;
     left: 0;
