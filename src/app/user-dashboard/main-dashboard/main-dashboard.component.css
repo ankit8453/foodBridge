@@ -5,6 +5,7 @@
     margin-bottom: 20px;
     margin-right: 10px;
     padding: 12px ;
+    min-width: 75vw;
 
 }
 nav {
@@ -88,7 +89,6 @@ nav ul{
     border-radius: 50%;
 }
 .container{
-    margin: 0px 15px;
     display: block;
     text-align: center;
 
@@ -151,7 +151,7 @@ nav ul{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 10px;
-    margin-top: 46px;
+    margin: 46px 0px;
     list-style: none;
     /* box-sizing: border-box; */
 

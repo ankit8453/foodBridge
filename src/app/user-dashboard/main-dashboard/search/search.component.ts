@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {ServerService} from  'C:/Users/HP/Desktop/internship/foodBridge/src/app/server/server.service';
+import {ServerService} from '../../../server/server.service';
 import * as path from 'path';
 import { Server } from '../../../server/server';
 @Component({

@@ -1,8 +1,6 @@
-.main{
-    margin: 20px 0 0 20px;
-}
+
 .profile-container{
-    height: 110vh;
+    height: 100vh;
 }
 .page-header .breadcrumb {
     margin-top: 0;
@@ -15,30 +13,36 @@
     list-style: none;
     display: flex;
 }
+.page-title{
+    padding-top: 25px;
+}
 
 .page-header .breadcrumb-item{padding-right: 10px; font-family: sans-serif;}
 
 .page-header .breadcrumb-item a{font-size: 1rem; color: rgb(37, 37, 36); text-decoration: none;}
  
 .page-header .breadcrumb-item a:hover{color: #393833; text-decoration: none;}
-    .ul{
+    ul{
         margin: 0;
         padding: 0;
         overflow: hidden;
     }
-    .li{
+    li{
         padding-left: 20px;
+        height: 8vh;
+    }
+    span{
+        height: 8vh;
     }
 .profile-data{
     float: left;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 30px;
     padding-top: 20px;
     padding-left: 15px;
-    margin-bottom: 40px;
     background-color: rgb(255, 255, 255);
     width: 826px;
-    height: 475px;
+    height: 75vh;
     border: 5px solid rgba(239, 236, 231, 0.888);
     border-radius: 12px;
 }
@@ -46,9 +50,17 @@
 
 .profile-details{margin-top: 0; padding-left: 20px;}
 
-.profile-img{margin:15px ;padding-left: 51px; }
+.profile-img{margin:15px ;padding-left: 71px; }
 
-.profile-primary-data{margin-top: 0;padding-top: 4px; width: 30%; display: flex; flex-direction: column;}
+.profile-primary-data{
+    margin-top: 0;
+    padding-top: 4px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .profile-action{display:flex ; padding-left: 32px }
 
@@ -63,7 +75,6 @@
 
 .profile-secondary-data{
     
-    margin-top: 45px;
     padding-top: 2px;
 }
     .profile-secondary-data ul{  
@@ -83,13 +94,14 @@
         text-align: left;
     }
     .edit-icon{
-        position: relative;
         bottom: 430px;
         left: 755px;
         float: right;
         margin-top: 10px;
         margin-right: 10px;
         cursor: pointer;
+        display: flex;
+        flex-direction: row-reverse;
     }
     div .title{
         color: #4f4f4f;
@@ -130,10 +142,6 @@
 
     .btn button:hover{background-color: #EB6029; transition: 0.2s;}
 
-    div .edit-icon{
-        width: 30px;
-        margin-left: -1px;
-    }
     .edit-icon i{
         font-size: 1.5rem;
         color: #EB6019;
