@@ -1,4 +1,4 @@
-.container {
+.container-body {
     background-image: linear-gradient(to bottom, #f3c0a1 , #fdebdbf7, white);
     height: 100vh;
     display: flex;
@@ -7,7 +7,7 @@
 #side-navbar{
     display: block;
     width:230px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     background-color: #F4F2F0;
     left: 0;
