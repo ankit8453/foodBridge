@@ -20,7 +20,7 @@ export class SignUpComponent {
         timer: 2000
       }); 
       setTimeout(()=> { 
-      this.router.navigateByUrl('/header-pages/homepage')
+      this.router.navigateByUrl('/user-dashboard/user-profile')
       }, 2000)
   }
 }
