@@ -4,6 +4,9 @@ import {ServerService} from '../../../server/server.service';
 import Swal from 'sweetalert2';
 import * as path from 'path';
 import { Server } from '../../../server/server';
+import * as firebase from 'firebase/app';
+import 'firebase/firestore';  
+import 'firebase/storage';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -14,6 +17,7 @@ export class SearchComponent implements OnInit {
   noteData: any = []
   noteObj: Server ={
     id: '',
+    booked: false,
     place: '',
     mobile: 0,
     desc: '',
@@ -24,6 +28,7 @@ export class SearchComponent implements OnInit {
       place:['', Validators.required],
       decription:['', Validators.required],
       image:['', Validators.required],
+      booked:[false, Validators.required],
       mobile:['', Validators.required],
     })
    }
@@ -31,9 +36,14 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
     this.getAllNotes()
   }
+
+// Handle image upload event
+
+// 
   addNote(){
     const {value} = this.noteForm
     console.log(value);
+    this.noteObj.booked = false,
     this.noteObj.id ='',
     this.noteObj.place =value.place,
     this.noteObj.mobile =value.mobile,
@@ -59,7 +69,7 @@ export class SearchComponent implements OnInit {
   searchValue : string ="";
 
   // for book now button and change the text of button to booked
-  itemBooked(){
+  itemBooked(int: number){
     Swal.fire({
       title: 'Are you sure?',
       text: "You won't be able to revert this!",
@@ -76,7 +86,27 @@ export class SearchComponent implements OnInit {
           'success'
 
         )
-        
+        var btnData = document.getElementsByClassName("book-now");
+        // btnData[int].innerHTML = "Booked";
+        // this.noteData[int].booked = true;
+        if(this.noteData[int].booked===false){
+          btnData[int].innerHTML = "Booked";
+          this.noteData[int].booked = true;
+        }
+        else{
+          //  fire  a notification that item is already booked
+          if(btnData[int].innerHTML==="Booked"){
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Item is already booked!',
+          })
+        }
+          
+        }
+
+
+
       }
     })
   }

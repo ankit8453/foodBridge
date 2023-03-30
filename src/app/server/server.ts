@@ -4,5 +4,5 @@ export interface Server {
     mobile : number;
     desc : string;
     food_img : undefined;
-
+    booked : boolean;
 }

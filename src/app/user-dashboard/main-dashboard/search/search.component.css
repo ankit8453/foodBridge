@@ -1,7 +1,7 @@
 .container {
     margin-top: 34px;
     margin-bottom: 34px;
-    padding-bottom: 34px;
+    /* padding-bottom: 34px; */
 }
 
 .add-food{
@@ -98,7 +98,8 @@ h5{
     justify-content: space-between;
     text-align: center;
     gap: 14px;
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: 430px;
 }
 /* timing */
 .Time-updated{
