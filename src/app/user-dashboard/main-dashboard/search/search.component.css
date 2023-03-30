@@ -25,14 +25,20 @@
 .card-body{
     background-color: aliceblue;
     border-radius: 15px;
+    
 }
-
+.content-description
+{
+    text-align: left;
+    padding: 0 20px;
+}
 .event-card {
     -webkit-box-shadow: 0 0 15px rgba(99, 114, 130, 0.3);
     box-shadow: 0 0 15px rgba(99, 114, 130, 0.3);
-    width: 33%;
+    width: 60%;
     border-radius: 15px;
-    margin: 10px 12px;
+
+    margin: 16px 12px;
   }
 
 #info-img{
@@ -86,15 +92,13 @@ h5{
 }
 /* Container Properties */
 .div-container{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 4px px;
+    justify-content: space-between;
+    text-align: center;
+    gap: 14px;
+    max-width: 100%;
 }
 /* timing */
 .Time-updated{

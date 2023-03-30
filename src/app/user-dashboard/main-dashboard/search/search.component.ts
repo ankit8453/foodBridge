@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ServerService} from '../../../server/server.service';
+import Swal from 'sweetalert2';
 import * as path from 'path';
 import { Server } from '../../../server/server';
 @Component({
@@ -56,4 +57,29 @@ export class SearchComponent implements OnInit {
   }
 
   searchValue : string ="";
+
+  // for book now button and change the text of button to booked
+  itemBooked(){
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, book it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          'Booked!',
+          'Your item has been booked successfully.',
+          'success'
+
+        )
+        
+      }
+    })
+  }
+
+
 }
