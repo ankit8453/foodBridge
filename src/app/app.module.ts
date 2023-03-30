@@ -20,7 +20,6 @@ import { MainDashboardComponent } from './user-dashboard/main-dashboard/main-das
 import { HeaderPagesComponent } from './header-pages/header-pages.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { SearchComponent } from './user-dashboard/main-dashboard/search/search.component';
-import { AddServeFoodComponent } from './user-dashboard/main-dashboard/add-serve-food/add-serve-food.component';
 import { FooterComponent } from './header-pages/footer/footer.component';
 import { ResetPasswordComponent } from './user-dashboard/reset-password/reset-password.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
@@ -32,6 +31,7 @@ import { provideFunctions,getFunctions } from '@angular/fire/functions';
 import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { ReactiveFormsModule } from '@angular/forms';
 // import { UserDashboardRoutingModule } from './user-dashboard/user-dashboard-routing.module';
 
 
@@ -55,7 +55,6 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     HeaderPagesComponent,
     PagenotfoundComponent,
     SearchComponent,
-    AddServeFoodComponent,
     FooterComponent,
     ResetPasswordComponent,
     
@@ -65,6 +64,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
