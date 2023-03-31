@@ -67,6 +67,7 @@ export class SearchComponent implements OnInit {
   }
 
   searchValue : string ="";
+  isAvailable : boolean = false;
 
   // for book now button and change the text of button to booked
   itemBooked(int: number){
@@ -80,22 +81,28 @@ export class SearchComponent implements OnInit {
       confirmButtonText: 'Yes, book it!'
     }).then((result) => {
       if (result.isConfirmed) {
+        var btnData = document.getElementsByClassName("book-now");
+        var tagName = document.getElementsByClassName("tagging-type-A")
+        // btnData[int].innerHTML = "Booked";
+        // this.noteData[int].booked = true;
+        if(this.noteData[int].booked===false){
+          btnData[int].innerHTML = "Booked";
+          this.noteData[int].booked = true;
+          tagName[int].innerHTML = "Not Available";
+          
         Swal.fire(
           'Booked!',
           'Your item has been booked successfully.',
           'success'
 
         )
-        var btnData = document.getElementsByClassName("book-now");
-        // btnData[int].innerHTML = "Booked";
-        // this.noteData[int].booked = true;
-        if(this.noteData[int].booked===false){
-          btnData[int].innerHTML = "Booked";
-          this.noteData[int].booked = true;
+        
+          
         }
         else{
           //  fire  a notification that item is already booked
           if(btnData[int].innerHTML==="Booked"){
+
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
