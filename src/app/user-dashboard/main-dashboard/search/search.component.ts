@@ -1,8 +1,12 @@
 import { Component,OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {ServerService} from  'C:/Users/HP/Desktop/internship/foodBridge/src/app/server/server.service';
+import {ServerService} from '../../../server/server.service';
+import Swal from 'sweetalert2';
 import * as path from 'path';
 import { Server } from '../../../server/server';
+import * as firebase from 'firebase/app';
+import 'firebase/firestore';  
+import 'firebase/storage';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -13,6 +17,7 @@ export class SearchComponent implements OnInit {
   noteData: any = []
   noteObj: Server ={
     id: '',
+    booked: false,
     place: '',
     mobile: 0,
     desc: '',
@@ -23,6 +28,7 @@ export class SearchComponent implements OnInit {
       place:['', Validators.required],
       decription:['', Validators.required],
       image:['', Validators.required],
+      booked:[false, Validators.required],
       mobile:['', Validators.required],
     })
    }
@@ -30,9 +36,14 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
     this.getAllNotes()
   }
+
+// Handle image upload event
+
+// 
   addNote(){
     const {value} = this.noteForm
     console.log(value);
+    this.noteObj.booked = false,
     this.noteObj.id ='',
     this.noteObj.place =value.place,
     this.noteObj.mobile =value.mobile,
@@ -56,4 +67,56 @@ export class SearchComponent implements OnInit {
   }
 
   searchValue : string ="";
+  isAvailable : boolean = false;
+
+  // for book now button and change the text of button to booked
+  itemBooked(int: number){
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, book it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        var btnData = document.getElementsByClassName("book-now");
+        var tagName = document.getElementsByClassName("tagging-type-A")
+        // btnData[int].innerHTML = "Booked";
+        // this.noteData[int].booked = true;
+        if(this.noteData[int].booked===false){
+          btnData[int].innerHTML = "Booked";
+          this.noteData[int].booked = true;
+          tagName[int].innerHTML = "Not Available";
+          
+        Swal.fire(
+          'Booked!',
+          'Your item has been booked successfully.',
+          'success'
+
+        )
+        
+          
+        }
+        else{
+          //  fire  a notification that item is already booked
+          if(btnData[int].innerHTML==="Booked"){
+
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Item is already booked!',
+          })
+        }
+          
+        }
+
+
+
+      }
+    })
+  }
+
+
 }

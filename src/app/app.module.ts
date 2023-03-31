@@ -54,10 +54,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MainDashboardComponent,
     HeaderPagesComponent,
     PagenotfoundComponent,
-    SearchComponent,
     FooterComponent,
     ResetPasswordComponent,
-    
+    SearchComponent
   
 
   ],
