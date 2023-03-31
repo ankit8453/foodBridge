@@ -18,6 +18,7 @@ export class SearchComponent implements OnInit {
   noteObj: Server ={
     id: '',
     booked: false,
+    organizationName: '',
     place: '',
     mobile: 0,
     desc: '',
@@ -25,6 +26,7 @@ export class SearchComponent implements OnInit {
   }
   constructor(private fb:FormBuilder, private serverService:ServerService) {
     this.noteForm = this.fb.group({
+      organizationName: ['', Validators.required],
       place:['', Validators.required],
       decription:['', Validators.required],
       image:['', Validators.required],
@@ -45,6 +47,7 @@ export class SearchComponent implements OnInit {
     console.log(value);
     this.noteObj.booked = false,
     this.noteObj.id ='',
+    this.noteObj.organizationName = value.organizationName,
     this.noteObj.place =value.place,
     this.noteObj.mobile =value.mobile,
     this.noteObj.desc =value.decription,
