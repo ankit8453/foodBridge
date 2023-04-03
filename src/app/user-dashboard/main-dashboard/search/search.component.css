@@ -97,6 +97,7 @@ h5{
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+    /* margin: 0 auto; */
     gap: 14px;
     /* max-width: 100%; */
     width: 430px;
