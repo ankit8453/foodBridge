@@ -23,5 +23,35 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
+STEP 1: Clone the repository from GitHub.
+
+git clone https://github.com/ankit8453/foodbridge
+
+STEP 2: Change the directory to the repository.
+
+cd foodbridge
+
+STEP 3: install node modules (For Windows)
+
+npm install
+npm install -g @angular/cli
+
+STEP 4: Install the dependencies.
+
+npm install sweetalert2
+
+npm i angular-firebase
+
+
+STEP 7: Run the application. (For Windows)
+
+ng serve
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Our Web Page
+
+[![Watch the video]](https://youtu.be/omDFxrRqhS8)
+
+
+
